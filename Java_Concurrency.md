@@ -76,16 +76,19 @@
 - BLOCKED：等待其线程释放锁
 - TERMINATED：线程结束任务或抛出异常结束
 
-### 创建线程
+### 创建
 - 通过继承Thread类创建线程
 - 通过实现Runnable接口创建线程
 - 通过实现Callable接口并封装FutureTask对象创建线程
 
-### 创建进程
-- 通过ProcessBuilder创建进程
-- 通过Runtime创建进程
+### 方法
+- start()：开启此线程，进入可运行的状态，之后由JVM调度执行。
+- interrupt()：中断此线程。
+- join()：调用线程等待此线程死亡。
+- sleep()：造成当前线程进行周期性睡眠，线程不释放锁资源。
+- yield()：提示调度器当前线程愿意让出当前CPU的使用权。
 
-### 创建线程池
+### 线程池
 - 通过Executors.newFixedThreadPool()创建固定长度的线程池
 - 通过Executors.newCachedThreadPool()创建非固定长度的缓存型线程池
 - 通过Executors.newSingleThreadExecutor()创建单线程的线程池
