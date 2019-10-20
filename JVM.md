@@ -34,6 +34,9 @@
 - 等同于没有引用，可能在任何时间被回收。
 - 用于跟踪对象被回收的活动。
 
+## finalize()
+- 当对象没有重写finalize()方法或finalize()方法已被JVM调用过一次时，finalize()不会被执行。
+
 ## 垃圾收集算法
 
 ### 标记
@@ -48,5 +51,18 @@
 ### 复制
 - 将内存分为大小相同的两块，当其中一块内存用完后，将所有存活的对象复制到另一块中，并且回收所有不可达的对象。
 
-## finalize()
-- 当对象没有重写finalize()方法或finalize()方法已被JVM调用过一次时，finalize()不会被执行。
+## 垃圾回收器
+
+### Serial
+
+### Serial Old
+
+### Parallel New
+
+### Parallel Scavenge
+
+### Parallel Old
+
+### CMS
+
+### G1
