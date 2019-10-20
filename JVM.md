@@ -81,11 +81,22 @@
 
 ### G1
 
-## 类加载
+## 类
+
+### 类加载
 - 加载：加载类信息，生成Class对象
 - 验证：验证类的合法性
 - 准备：类的静态变量分配内存
 - 解析：符号引用替换为直接引用
 - 初始化：初始化Class对象
 
-## 双亲委派
+### 类加载器
+- BootstrapClassLoader（启动类加载器）：负责加载 %JAVA_HOME%/lib 核心类库。
+- ExtensionClassLoader（扩展类加载器）：负责加载 %JRE_HOME%/lib/ext 扩展类库。
+- AppClassLoader（系统类加载器）：负责加载 CLASSPATH 下的所有jar包和类。
+
+### 双亲委派
+- 自底向上检查类是否被加载，AppClassLoader -> ExtensionClassLoader -> BootstrapClassLoader
+- 自顶向下尝试加载类，BootstrapClassLoader -> ExtensionClassLoader -> AppClassLoader
+
+
