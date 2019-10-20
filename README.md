@@ -12,4 +12,6 @@
 
 ### [分布式系统](https://github.com/zzycs/Note/blob/master/Distribution_System.md)
 
-### [Java并发](https://github.com/zzycs/Note/blob/master/Java_Concurrency.md)
+### [Java并发](https://github.com/zzycs/Note/blob/master/JUC.md)
+
+### [Java虚拟机](https://github.com/zzycs/Note/blob/master/JVM.md)
