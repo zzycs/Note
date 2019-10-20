@@ -68,6 +68,29 @@
 
 ## Java线程
 
+### 生命周期
+- NEW：创建后尚未启动
+- RUNNABLE：可运行，正在等待CPU时间片(包括READY和RUNNING)
+- WAITING：等待被显式唤醒（释放锁）
+- TIMED_WAITING：系统自动唤醒（不释放锁）
+- BLOCKED：等待其线程释放锁
+- TERMINATED：线程结束任务或抛出异常结束
+
+### 创建线程
+- 通过继承Thread类创建线程
+- 通过实现Runnable接口创建线程
+- 通过实现Callable接口并封装FutureTask对象创建线程
+
+### 创建进程
+- 通过ProcessBuilder创建进程
+- 通过Runtime创建进程
+
+### 创建线程池
+- 通过Executors.newFixedThreadPool()创建固定长度的线程池
+- 通过Executors.newCachedThreadPool()创建非固定长度的缓存型线程池
+- 通过Executors.newSingleThreadExecutor()创建单线程的线程池
+- 通过Executors.newScheduledThreadPool()创建固定长度的延迟型线程池
+- 通过ThreadPoolExecutor构造函数创建线程池，自定义工作队列，线程工厂，拒绝策略等
 
 ## Synchronized关键字
 
