@@ -54,14 +54,24 @@
 ## 垃圾回收器
 
 ### Serial
+- 新生代回收器。
+- 使用单线程和复制算法。
 
 ### Serial Old
+- 老年代回收器。
+- 使用单线程和标记-整理算法。
 
-### Parallel New
-
-### Parallel Scavenge
+### ParNew
+- 新生代回收器。
+- 使用多线程和复制算法。
 
 ### Parallel Old
+- 老年代回收器。
+- 使用多线程和标记-整理算法。
+
+### Parallel Scavenge
+- 与ParNew类似。
+- 高效利用CPU提高吞吐量。
 
 ### CMS
 
