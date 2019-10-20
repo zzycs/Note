@@ -12,4 +12,4 @@
 
 ### [分布式系统](https://github.com/zzycs/Note/blob/master/Distribution_System.md)
 
-### [Java](https://github.com/zzycs/Note/blob/master/Java.md)
+### [Java并发](https://github.com/zzycs/Note/blob/master/Java_Concurrency.md)
