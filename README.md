@@ -1,6 +1,6 @@
 ## 复习笔记
 
-### [数据结构](https://github.com/zzycs/Note/blob/master/DataStructure.md)
+### [数据结构](https://github.com/zzycs/Note/blob/master/ADT.md)
 
 ### [算法](https://github.com/zzycs/Algorithm)
 
